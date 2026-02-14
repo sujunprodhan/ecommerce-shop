@@ -2,9 +2,30 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 @theme inline {
+  /* custom color start */
+--color-shop_light_pink: #fcf0ef
+--color-shop_dark_green: #063c28
+--color-shop_btn_dark_green: #063d29
+--color-shop_light_bg: #f6f6f6
+--color-shop_light_green: #3b9c3c
+--color-shop_orange: #fb6c08
+--color-dark_color: #151515
+--color-light_color: #52525b
+--color-light_orange: #fca99b
+--color-light_blue: #7688db
+--color-dark_blue: #6c7fd8
+--color-dark_text: #686e7d
+--color-light_bg: #f8f8fb
+--color-light_bg: #f8f8fb
+--color-dark_red: #f02757
+--color-light_text: #ababab
+--color-light_green: #93d991
+--color-product_bg: #f1f3f8
+
+  /* custom color end */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
