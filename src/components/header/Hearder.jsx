@@ -3,13 +3,15 @@ import React from 'react';
 import Logo from '../common/Logo';
 import Container from '../common/Container';
 import Link from 'next/link';
-import { XIcon } from 'lucide-react';
-import { navItem } from '@/constants/data';
-import { usePathname } from 'next/navigation';
+// import { XIcon } from 'lucide-react';
+// import { navItem } from '@/constants/data';
+// import { usePathname } from 'next/navigation';
+import NavMenuItems from './NavMenuItems';
+import { ClerkLoaded, ClerkLoading, SignInButton, UserButton, SignedIn, SignedOut, } from '@clerk/nextjs';
 
 
 const Header = () => {
-  const pathname = usePathname()
+  // const pathname = usePathname()
   const getSignInUrl = '/signin'
   const signUpUrl = '/signup'
   return (
@@ -20,7 +22,7 @@ const Header = () => {
             <div>
               <Logo></Logo>
             </div>
-            <div className="hidden md:inline-flex justify-center items-center gap-7 text-sm uppercase font-semibold text-light-color">
+            {/* <div className="hidden md:inline-flex justify-center items-center gap-7 text-sm uppercase font-semibold text-light-color">
               {navItem?.map((item) => (
                 <Link
                   key={item?.title}
@@ -38,8 +40,16 @@ const Header = () => {
                   />
                 </Link>
               ))}
-            </div>
+            </div> */}
+            <NavMenuItems></NavMenuItems>
             <div className='flex gap-2 items-center'>
+              {/* <ClerkLoading>
+                <h1>Loading....</h1>
+              </ClerkLoading>
+              <ClerkLoaded>
+                <SignInButton mode='modal'/>
+                <UserButton/>
+              </ClerkLoaded> */}
               <Link
                 href={getSignInUrl}
                 className="bg-transparent border border-green-600 hover:bg-green-700 hover:text-white px-2 py-1.5 rounded-md font-semibold hoverEffect duration-300"

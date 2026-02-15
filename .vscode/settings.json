@@ -1,0 +1,7 @@
+{
+  "editor.screenReaderAnnounceInlineSuggestion": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.inlineSuggest.experimental.showOnSuggestConflict": "always",
+  "editor.inlineSuggest.showToolbar": "always",
+  "chat.disableAIFeatures": false
+}
